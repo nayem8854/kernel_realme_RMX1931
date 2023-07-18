@@ -282,7 +282,6 @@ void inet_csk_update_fastreuse(struct inet_bind_bucket *tb,
 	kuid_t uid = sock_i_uid(sk);
 	bool reuse = sk->sk_reuse && sk->sk_state != TCP_LISTEN;
 
-<<<<<<< HEAD
 	if (!port) {
 		head = inet_csk_find_open_port(sk, &tb, &port);
 		if (!head)
